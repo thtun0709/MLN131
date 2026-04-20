@@ -21,7 +21,7 @@ const politicalCards = [
   {
     icon: Users,
     title: "Bản chất giai cấp",
-    description: "Dân chủ XHCN đại diện lợi ích của đại đa số nhân dân lao động.",
+    description: "Dân chủ xã hội chủ nghĩa đại diện lợi ích của đại đa số nhân dân lao động.",
   },
   {
     icon: Shield,
@@ -102,7 +102,7 @@ function Chapter2({ chapter }) {
       <div className="mx-auto w-full max-w-6xl space-y-12 px-0">
         <HeroBlock
           kicker="--------Chương 2--------"
-          heading="Bản chất dân chủ XHCN"
+          heading="Bản chất dân chủ xã hội chủ nghĩa"
           subheading="Không chỉ là quyền phát biểu, mà là hệ thống quyền lực của nhân dân"
           highlight="Chính trị - Kinh tế - Tư tưởng - Pháp luật"
           centered
@@ -147,9 +147,8 @@ function Chapter2({ chapter }) {
         <SectionWrapper title="Kết luận" tone="warm">
           <div className="rounded-2xl border border-amber-300/30 bg-linear-to-r from-orange-950/35 via-amber-900/20 to-red-950/35 p-6 md:p-8">
             <p className="text-lg font-semibold leading-relaxed text-amber-100 md:text-2xl">
-              Dân chủ XHCN là một hệ thống, không chỉ là biểu đạt.
+            Hệ thống quyền lực của nhân dân.
             </p>
-            <p className="mt-2 text-sm text-slate-300">Democracy XHCN is a system, not just expression.</p>
 
             <div className="mt-6 flex flex-col items-center gap-3 text-center">
               <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-6 py-3 text-sm font-semibold text-cyan-100 md:text-base">

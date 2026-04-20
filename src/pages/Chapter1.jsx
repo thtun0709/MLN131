@@ -52,7 +52,7 @@ const incorrectPoints = [
   {
     icon: MessageSquareWarning,
     title: "Bản chất",
-    description: "MXH chỉ là công cụ.",
+    description: "Mạng xã hội chỉ là công cụ.",
   },
 ];
 
@@ -70,7 +70,7 @@ function Chapter1({ chapter }) {
           imageAlt="Mockup phần 1"
         />
 
-        <SectionWrapper title="So sánh nhận định" subtitle="Đặt hai góc nhìn cạnh nhau để thấy rõ: MXH hỗ trợ dân chủ nhưng không phải bản chất của dân chủ XHCN.">
+        <SectionWrapper title="So sánh nhận định" subtitle="Đặt hai góc nhìn cạnh nhau để thấy rõ: Mạng xã hội hỗ trợ dân chủ nhưng không phải bản chất của dân chủ xã hội chủ nghĩa.">
           <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="pointer-events-none absolute left-1/2 top-2 hidden h-[calc(100%-1rem)] w-px -translate-x-1/2 bg-slate-600/50 md:block" />
 
@@ -79,7 +79,7 @@ function Chapter1({ chapter }) {
                 <CheckCircle className="mt-0.5 h-6 w-6 shrink-0 text-emerald-300" />
                 <div>
                   <h3 className="text-xl font-bold text-blue-100">Nhận định ĐÚNG</h3>
-                  <p className="mt-1 text-sm text-blue-200/90">MXH hỗ trợ dân chủ.</p>
+                  <p className="mt-1 text-sm text-blue-200/90">Mạng xã hội hỗ trợ dân chủ.</p>
                 </div>
               </div>
 
@@ -104,7 +104,7 @@ function Chapter1({ chapter }) {
                 <XCircle className="mt-0.5 h-6 w-6 shrink-0 text-red-300" />
                 <div>
                   <h3 className="text-xl font-bold text-red-100">Nhận định SAI</h3>
-                  <p className="mt-1 text-sm text-red-200/90">MXH không phải bản chất.</p>
+                  <p className="mt-1 text-sm text-red-200/90">Mạng xã hội không phải bản chất.</p>
                 </div>
               </div>
 
@@ -128,7 +128,7 @@ function Chapter1({ chapter }) {
 
         <SectionWrapper
           title="Sơ đồ kết luận"
-          subtitle="Mạng xã hội là công cụ hỗ trợ, trong khi dân chủ XHCN là một hệ thống chính trị - pháp lý - kinh tế toàn diện."
+          subtitle="Mạng xã hội là công cụ hỗ trợ, trong khi dân chủ xã hội chủ nghĩa là một hệ thống chính trị - pháp lý - kinh tế toàn diện."
           tone="warm"
         >
           <ConclusionDiagram />

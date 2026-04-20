@@ -7,7 +7,7 @@ import SectionWrapper from "../components/chapter1/SectionWrapper";
 const technologyCards = [
   {
     icon: Globe,
-    title: "MXH mở rộng dân chủ",
+    title: "Mạng xã hội mở rộng dân chủ",
     description: "Không gian số mở thêm kênh tham gia, phản hồi và lan tỏa thông tin công khai cho người dân.",
   },
   {
@@ -58,7 +58,6 @@ function Chapter4({ chapter }) {
           kicker="--------Chương 4--------"
           heading="Kết luận"
           subheading="Công nghệ hỗ trợ - hệ thống quyết định"
-          highlight="Democracy is a system, not a tool"
           centered
         />
 
@@ -88,16 +87,18 @@ function Chapter4({ chapter }) {
 
         <SectionWrapper title="Tổng Hợp" tone="warm">
           <div className="rounded-2xl border border-amber-300/30 bg-linear-to-r from-orange-950/35 via-amber-900/20 to-red-950/35 p-6 md:p-8">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center">
-              <p className="text-lg font-semibold leading-relaxed text-amber-100 md:text-2xl">
-                Dân chủ XHCN là quá trình lâu dài,
-                <br />
-                MXH chỉ là công cụ hỗ trợ.
-                <br />
-                Quyền lực thực sự thuộc về nhân dân
-                <br />
-                khi được thực hiện trong khuôn khổ pháp luật.
-              </p>
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+              <div className="mx-auto w-full max-w-xl space-y-3">
+                <div className="rounded-xl border border-amber-300/30 bg-black/20 px-4 py-3 text-center text-sm font-semibold text-amber-100 md:text-base">
+                  Nền tảng lâu dài
+                </div>
+                <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-cyan-100 md:text-base">
+                  Công cụ hỗ trợ
+                </div>
+                <div className="rounded-xl border border-amber-300/30 bg-black/20 px-4 py-3 text-center text-sm font-semibold text-amber-100 md:text-base">
+                  Quyền lực nhân dân
+                </div>
+              </div>
 
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-6 py-3 text-sm font-semibold text-cyan-100 md:text-base">

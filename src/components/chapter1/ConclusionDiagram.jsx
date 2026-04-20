@@ -54,7 +54,7 @@ function ConclusionDiagram() {
       <FlowRow
         left={{
           icon: Landmark,
-          title: "Dân chủ XHCN",
+          title: "Dân chủ xã hội chủ nghĩa",
           label: "Nền dân chủ xã hội chủ nghĩa",
         }}
         right={{

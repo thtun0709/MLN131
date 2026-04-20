@@ -7,7 +7,7 @@ import SectionWrapper from "../components/chapter1/SectionWrapper";
 const toolCards = [
   {
     icon: Code,
-    title: "Copilot để code",
+    title: "Copilot để lập trình",
     description: "Mình dùng Copilot để tăng tốc viết component, xử lý UI và tối ưu cấu trúc mã nguồn.",
   },
   {
@@ -47,9 +47,9 @@ function ChapterUsage({ chapter }) {
     <section id={chapterId} className="scroll-mt-24 py-12">
       <div className="mx-auto w-full max-w-6xl space-y-12 px-0">
         <HeroBlock
-          kicker="--------AI Usage--------"
+          kicker="--------Sử dụng AI--------"
           heading="Báo cáo sử dụng AI"
-          subheading="Minh bạch công cụ, quy trình prompting và cách kiểm duyệt nội dung học thuật"
+          subheading="Minh bạch công cụ, quy trình đặt lệnh và cách kiểm duyệt nội dung học thuật"
           highlight="Copilot + NotebookLM + Gemini + ChatGPT"
           centered
         />
@@ -62,7 +62,7 @@ function ChapterUsage({ chapter }) {
           </div>
         </SectionWrapper>
 
-        <SectionWrapper title="Quy trình prompting" subtitle="Quy trình làm việc để tăng chất lượng đầu ra và giữ đúng mục tiêu học thuật.">
+        <SectionWrapper title="Quy trình đặt lệnh" subtitle="Quy trình làm việc để tăng chất lượng đầu ra và giữ đúng mục tiêu học thuật.">
           <div className="space-y-4">
             {promptingSteps.map((item) => (
               <article

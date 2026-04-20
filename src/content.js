@@ -1,6 +1,6 @@
 export const content = {
   hero: {
-    title: "DÂN CHỦ XHCN",
+    title: "DÂN CHỦ XÃ HỘI CHỦ NGHĨA",
     subtitle: "Giữa Lý luận Kinh điển và Sức mạnh Không gian mạng",
     typing: [
       "Mạng xã hội mở rộng phương thức dân chủ...",
@@ -33,11 +33,11 @@ export const content = {
   },
 
   part2: {
-    title: "Căn cứ lý luận - bản chất dân chủ XHCN",
+    title: "Căn cứ lý luận - bản chất dân chủ xã hội chủ nghĩa",
     political: {
       title: "Bản chất chính trị",
       points: [
-        "Dân chủ XHCN là quyền lực của đại đa số nhân dân lao động.",
+        "Dân chủ xã hội chủ nghĩa là quyền lực của đại đa số nhân dân lao động.",
         "Đặt dưới sự lãnh đạo của Đảng để bảo đảm định hướng vì lợi ích chung.",
         "Mục tiêu là lôi cuốn quần chúng tham gia tự giác vào quản lý nhà nước và xã hội.",
       ],
@@ -63,22 +63,22 @@ export const content = {
       points: [
         "Nhân dân là chủ thể quyền lực: dân là chủ và dân làm chủ.",
         "Quyền lực được thực thi qua cả dân chủ trực tiếp và dân chủ đại diện.",
-        "Quyền lực phải được thể chế hóa bằng Hiến pháp, pháp luật và Nhà nước pháp quyền XHCN.",
+        "Quyền lực phải được thể chế hóa bằng Hiến pháp, pháp luật và Nhà nước pháp quyền xã hội chủ nghĩa.",
       ],
     },
   },
 
   part3: {
-    title: "Nhận định của nhóm: MXH có là bản chất dân chủ?",
+    title: "Nhận định của nhóm: Mạng xã hội có là bản chất dân chủ?",
     value: {
-      title: "MXH là công cụ mạnh của dân chủ hiện đại",
+      title: "Mạng xã hội là công cụ mạnh của dân chủ hiện đại",
       points: [
         "Thúc đẩy quyền làm chủ trực tiếp theo phương châm dân biết, dân bàn, dân làm, dân kiểm tra.",
         "Tăng hiệu quả giám sát và phản biện xã hội, buộc chính quyền lắng nghe và điều chỉnh.",
       ],
     },
     limit: {
-      title: "Vì sao MXH chưa thể là bản chất dân chủ XHCN",
+      title: "Vì sao mạng xã hội chưa thể là bản chất dân chủ xã hội chủ nghĩa",
       points: [
         "Thiếu tính thể chế và pháp lý quyết định như các quy trình dân chủ theo luật.",
         "Dễ bị lợi dụng bởi thông tin sai lệch và thao túng dư luận.",
@@ -92,8 +92,8 @@ export const content = {
   part4: {
     title: "Kết luận",
     points: [
-      "Khẳng định vai trò của công nghệ: MXH mở rộng không gian tham gia dân chủ nhanh và minh bạch hơn.",
-      "Khẳng định bản chất không thể thay thế của dân chủ XHCN trên các mặt chính trị, kinh tế, pháp lý.",
+      "Khẳng định vai trò của công nghệ: Mạng xã hội mở rộng không gian tham gia dân chủ nhanh và minh bạch hơn.",
+      "Khẳng định bản chất không thể thay thế của dân chủ xã hội chủ nghĩa trên các mặt chính trị, kinh tế, pháp lý.",
       "Tại Việt Nam, sức mạnh dân chủ đến từ kết hợp dân chủ trực tiếp và dân chủ đại diện.",
       "Thông điệp cuối cùng: quyền làm chủ thực sự của nhân dân phải được thực hiện trong khuôn khổ pháp luật, dưới sự lãnh đạo của Đảng, vì mục tiêu xã hội công bằng, văn minh.",
     ],

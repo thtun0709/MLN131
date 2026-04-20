@@ -27,7 +27,7 @@ function AIUsagePage() {
             </div>
             <div>
               <p className="text-sm font-semibold tracking-wide text-slate-100">Nhóm 2 MLN131</p>
-              <p className="text-xs text-slate-400">AI Usage</p>
+              <p className="text-xs text-slate-400">Sử dụng AI</p>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ function AIUsagePage() {
               Nội dung chính
             </button>
             <span className="rounded-xl bg-emerald-400/20 px-4 py-2 text-sm font-semibold text-emerald-100 shadow">
-              AI Usage
+              Sử dụng AI
             </span>
           </div>
         </div>

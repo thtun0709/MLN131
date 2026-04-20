@@ -4,7 +4,7 @@ export const heroContent = {
   subtitle: "Giữa lý luận kinh điển và sức mạnh không gian mạng",
   typing: [
     "Mạng xã hội mở rộng phương thức tham gia dân chủ.",
-    "Bản chất dân chủ XHCN được bảo đảm bằng thể chế và pháp luật.",
+    "Bản chất dân chủ xã hội chủ nghĩa được bảo đảm bằng thể chế và pháp luật.",
     "Công cụ kỹ thuật không thay thế nền tảng chính trị - kinh tế của chế độ.",
   ],
 };
@@ -22,13 +22,13 @@ export const chapterData = {
     label: "Chương 1",
     title: "Nhận định và phân tích tình huống",
     subtitle:
-      "Nhận định ban đầu đúng một phần vì nhận ra vai trò mới của MXH, nhưng sai khi đồng nhất nó với biểu hiện cao nhất của dân chủ XHCN.",
+      "Nhận định ban đầu đúng một phần vì nhận ra vai trò mới của mạng xã hội, nhưng sai khi đồng nhất nó với biểu hiện cao nhất của dân chủ xã hội chủ nghĩa.",
     sections: [
       {
         heading: "Phần đúng của nhận định",
-        subheading: "MXH như một kênh dân chủ hiện đại",
+        subheading: "Mạng xã hội như một kênh dân chủ hiện đại",
         paragraphs: [
-          "MXH giúp lôi cuốn quần chúng tham gia quản lý xã hội nhanh và rộng hơn.",
+          "Mạng xã hội giúp lôi cuốn quần chúng tham gia quản lý xã hội nhanh và rộng hơn.",
           "Người dân có thêm công cụ ngôn luận, giám sát và phản biện chính sách công.",
         ],
         bullets: [
@@ -42,8 +42,8 @@ export const chapterData = {
         heading: "Phần sai của nhận định",
         subheading: "Công cụ không đồng nghĩa với bản chất",
         paragraphs: [
-          "Dân chủ XHCN là một chế độ chính trị - xã hội toàn diện, không chỉ là tiếp cận mạng.",
-          "Nội dung viral trên MXH chỉ là dư luận, không thay thế cơ chế quyền lực được luật định.",
+          "Dân chủ xã hội chủ nghĩa là một chế độ chính trị - xã hội toàn diện, không chỉ là tiếp cận mạng.",
+          "Nội dung lan truyền trên mạng xã hội chỉ là dư luận, không thay thế cơ chế quyền lực được luật định.",
         ],
         bullets: [
           "Nhầm lẫn giữa phương thức biểu hiện và bản chất chế độ.",
@@ -57,7 +57,7 @@ export const chapterData = {
   chapter2: {
     id: "chapter-2",
     label: "Chương 2",
-    title: "Căn cứ lý luận và bản chất dân chủ XHCN",
+    title: "Căn cứ lý luận và bản chất dân chủ xã hội chủ nghĩa",
     subtitle:
       "Chương này tách thành các hợp phần lý luận độc lập để trình bày ngắn gọn, rõ cấu trúc và tránh gom nội dung vào một khối.",
     sections: [
@@ -65,7 +65,7 @@ export const chapterData = {
         heading: "Bản chất chính trị",
         subheading: "Quyền lực đại đa số dưới sự lãnh đạo của Đảng",
         paragraphs: [
-          "Dân chủ XHCN mang bản chất giai cấp công nhân, đại diện lợi ích nhân dân lao động.",
+          "Dân chủ xã hội chủ nghĩa mang bản chất giai cấp công nhân, đại diện lợi ích nhân dân lao động.",
         ],
         bullets: [
           "Đảng lãnh đạo để bảo đảm hướng phát triển đúng mục tiêu.",
@@ -106,7 +106,7 @@ export const chapterData = {
         bullets: [
           "Dân chủ trực tiếp: góp ý, giám sát, tham gia quyết định.",
           "Dân chủ đại diện: Quốc hội, HĐND và cơ quan nhà nước do dân bầu.",
-          "Nhà nước pháp quyền XHCN là công cụ bảo đảm quyền làm chủ bền vững.",
+          "Nhà nước pháp quyền xã hội chủ nghĩa là công cụ bảo đảm quyền làm chủ bền vững.",
         ],
       },
     ],
@@ -114,15 +114,15 @@ export const chapterData = {
   chapter3: {
     id: "chapter-3",
     label: "Chương 3",
-    title: "Nhận định của nhóm: MXH có là bản chất dân chủ?",
+    title: "Nhận định của nhóm: Mạng xã hội có là bản chất dân chủ?",
     subtitle:
-      "Thay vì trình bày gom, chương này chia thành các nhóm lập luận đối xứng để thấy rõ giá trị và giới hạn của MXH.",
+      "Thay vì trình bày gom, chương này chia thành các nhóm lập luận đối xứng để thấy rõ giá trị và giới hạn của mạng xã hội.",
     sections: [
       {
-        heading: "Giá trị của MXH trong dân chủ hiện đại",
+        heading: "Giá trị của mạng xã hội trong dân chủ hiện đại",
         subheading: "Công cụ hỗ trợ dân chủ trực tiếp",
         paragraphs: [
-          "MXH tạo không gian phản hồi nhanh, minh bạch và có tính kết nối cao.",
+          "Mạng xã hội tạo không gian phản hồi nhanh, minh bạch và có tính kết nối cao.",
         ],
         bullets: [
           "Thúc đẩy tham gia xây dựng chính sách và giám sát xã hội.",
@@ -132,7 +132,7 @@ export const chapterData = {
         tone: "positive",
       },
       {
-        heading: "Giới hạn cốt lõi của MXH",
+        heading: "Giới hạn cốt lõi của mạng xã hội",
         subheading: "Không đủ điều kiện để đại diện bản chất chế độ",
         paragraphs: [
           "Tương tác trên nền tảng số không có giá trị pháp lý tương đương quy trình dân chủ theo luật.",
@@ -146,13 +146,13 @@ export const chapterData = {
       },
       {
         heading: "Kết luận của nhóm",
-        subheading: "MXH là bổ trợ, không phải nền tảng bản chất",
+        subheading: "Mạng xã hội là bổ trợ, không phải nền tảng bản chất",
         paragraphs: [
-          "MXH là bước tiến phương thức biểu hiện, giúp dân chủ XHCN sinh động hơn trong thực tiễn.",
+          "Mạng xã hội là bước tiến phương thức biểu hiện, giúp dân chủ xã hội chủ nghĩa sinh động hơn trong thực tiễn.",
         ],
         bullets: [
-          "Cần kết hợp MXH với hệ thống thể chế - pháp lý chính thống.",
-          "Bảo đảm quyền lực nhân dân được vận hành trong khuôn khổ nhà nước pháp quyền XHCN.",
+          "Cần kết hợp mạng xã hội với hệ thống thể chế - pháp lý chính thống.",
+          "Bảo đảm quyền lực nhân dân được vận hành trong khuôn khổ nhà nước pháp quyền xã hội chủ nghĩa.",
         ],
         tone: "neutral",
       },
@@ -169,7 +169,7 @@ export const chapterData = {
         heading: "Kết luận 1",
         subheading: "Không gian công nghệ là động lực phương thức",
         paragraphs: [
-          "MXH cần được nhìn nhận là bước tiến về phương thức thực hành dân chủ trong thời đại số.",
+          "Mạng xã hội cần được nhìn nhận là bước tiến về phương thức thực hành dân chủ trong thời đại số.",
         ],
         bullets: [
           "Tăng tốc độ tiếp nhận ý kiến.",
@@ -178,7 +178,7 @@ export const chapterData = {
       },
       {
         heading: "Kết luận 2",
-        subheading: "Bản chất dân chủ XHCN không thể thay thế",
+        subheading: "Bản chất dân chủ xã hội chủ nghĩa không thể thay thế",
         paragraphs: [
           "Cốt lõi vẫn là nền tảng chính trị - kinh tế - pháp lý của chế độ.",
         ],

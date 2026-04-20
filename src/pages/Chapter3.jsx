@@ -8,7 +8,7 @@ const toolCards = [
   {
     icon: MessageCircle,
     title: "Thúc đẩy dân chủ trực tiếp",
-    description: "MXH giúp người dân phản hồi nhanh, góp ý chính sách và lan tỏa thông tin công khai.",
+    description: "Mạng xã hội giúp người dân phản hồi nhanh, góp ý chính sách và lan tỏa thông tin công khai.",
   },
   {
     icon: Users,
@@ -26,7 +26,7 @@ const limitCards = [
   {
     icon: Scale,
     title: "Thiếu pháp lý",
-    description: "Tương tác trên MXH không có giá trị pháp lý như các cơ chế dân chủ được luật định.",
+    description: "Tương tác trên mạng xã hội không có giá trị pháp lý như các cơ chế dân chủ được luật định.",
   },
   {
     icon: AlertTriangle,
@@ -36,7 +36,7 @@ const limitCards = [
   {
     icon: Coins,
     title: "Không đảm bảo kinh tế",
-    description: "MXH không thể thay thế nền tảng sở hữu và phân phối bảo đảm quyền làm chủ thực chất.",
+    description: "Mạng xã hội không thể thay thế nền tảng sở hữu và phân phối bảo đảm quyền làm chủ thực chất.",
   },
 ];
 
@@ -50,11 +50,11 @@ function Chapter3({ chapter }) {
           kicker="--------Chương 3--------"
           heading="Mạng xã hội và dân chủ"
           subheading="Công cụ mạnh mẽ nhưng không phải bản chất"
-          highlight="Tool ≠ System"
+          highlight="Công cụ ≠ Hệ thống"
           centered
         />
 
-        <SectionWrapper title="MXH là công cụ mạnh mẽ của dân chủ">
+        <SectionWrapper title="Mạng xã hội là công cụ mạnh mẽ của dân chủ">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {toolCards.map((item) => (
               <CardItem
@@ -69,8 +69,8 @@ function Chapter3({ chapter }) {
         </SectionWrapper>
 
         <SectionWrapper
-          title="Vì sao MXH chưa phải bản chất?"
-          subtitle="MXH có giá trị như một công cụ, nhưng chưa đủ điều kiện để đại diện bản chất dân chủ XHCN."
+          title="Vì sao mạng xã hội chưa phải bản chất?"
+          subtitle="Mạng xã hội có giá trị như một công cụ, nhưng chưa đủ điều kiện để đại diện bản chất dân chủ xã hội chủ nghĩa."
           tone="warm"
         >
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -89,15 +89,15 @@ function Chapter3({ chapter }) {
         <SectionWrapper title="Kết luận" tone="warm">
           <div className="rounded-2xl border border-amber-300/30 bg-linear-to-r from-orange-950/35 via-amber-900/20 to-red-950/35 p-6 md:p-8">
             <p className="text-lg font-semibold leading-relaxed text-amber-100 md:text-2xl">
-              MXH là công cụ hỗ trợ dân chủ, nhưng không thể thay thế hệ thống chính trị - kinh tế - pháp luật.
+              Mạng xã hội là công cụ hỗ trợ, không thay thế hệ thống dân chủ xã hội chủ nghĩa.
             </p>
 
             <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
               <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-5 py-4 text-center text-sm font-semibold text-cyan-100 md:text-base">
-                MXH → Công cụ
+                Mạng xã hội → Công cụ
               </div>
               <div className="rounded-xl border border-amber-300/30 bg-black/20 px-5 py-4 text-center text-sm font-semibold text-amber-100 md:text-base">
-                Dân chủ XHCN → Hệ thống
+                Dân chủ xã hội chủ nghĩa → Hệ thống
               </div>
             </div>
           </div>

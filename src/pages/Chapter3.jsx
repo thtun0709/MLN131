@@ -1,5 +1,5 @@
 import React from "react";
-import { AlertTriangle, Coins, Eye, MessageCircle, Scale, Users } from "lucide-react";
+import { AlertTriangle, Coins, Eye, MessageCircle, Scale } from "lucide-react";
 import CardItem from "../components/chapter1/CardItem";
 import HeroBlock from "../components/chapter1/HeroBlock";
 import SectionWrapper from "../components/chapter1/SectionWrapper";
@@ -7,17 +7,12 @@ import SectionWrapper from "../components/chapter1/SectionWrapper";
 const toolCards = [
   {
     icon: MessageCircle,
-    title: "Thúc đẩy dân chủ trực tiếp",
+    title: "Thúc đẩy quyền làm chủ trực tiếp",
     description: "Mạng xã hội giúp người dân phản hồi nhanh, góp ý chính sách và lan tỏa thông tin công khai.",
   },
   {
-    icon: Users,
-    title: "Kết nối cộng đồng xã hội",
-    description: "Không gian mạng tạo liên kết rộng, tăng sự tham gia của người dân vào vấn đề chung.",
-  },
-  {
     icon: Eye,
-    title: "Giám sát và phản biện xã hội",
+    title: "Tạo lập không gian phản biện và giám sát",
     description: "Dư luận trực tuyến tạo áp lực minh bạch, buộc cơ quan công quyền lắng nghe và giải trình.",
   },
 ];
@@ -25,17 +20,17 @@ const toolCards = [
 const limitCards = [
   {
     icon: Scale,
-    title: "Thiếu pháp lý",
+    title: "Thiếu tính thể chế và tính quy phạm pháp luật",
     description: "Tương tác trên mạng xã hội không có giá trị pháp lý như các cơ chế dân chủ được luật định.",
   },
   {
     icon: AlertTriangle,
-    title: "Dễ bị thao túng",
+    title: "Sự phức tạp về tính giai cấp và nguy cơ bị thao túng",
     description: "Tin giả và xu hướng đám đông có thể làm sai lệch nhận thức và định hướng xã hội.",
   },
   {
     icon: Coins,
-    title: "Không đảm bảo kinh tế",
+    title: "Mâu thuẫn về nền tảng kinh tế",
     description: "Mạng xã hội không thể thay thế nền tảng sở hữu và phân phối bảo đảm quyền làm chủ thực chất.",
   },
 ];
@@ -55,7 +50,7 @@ function Chapter3({ chapter }) {
         />
 
         <SectionWrapper title="Mạng xã hội là công cụ mạnh mẽ của dân chủ">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {toolCards.map((item) => (
               <CardItem
                 key={item.title}
@@ -92,14 +87,7 @@ function Chapter3({ chapter }) {
               Mạng xã hội là công cụ hỗ trợ, không thay thế hệ thống dân chủ xã hội chủ nghĩa.
             </p>
 
-            <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
-              <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-5 py-4 text-center text-sm font-semibold text-cyan-100 md:text-base">
-                Mạng xã hội → Công cụ
-              </div>
-              <div className="rounded-xl border border-amber-300/30 bg-black/20 px-5 py-4 text-center text-sm font-semibold text-amber-100 md:text-base">
-                Dân chủ xã hội chủ nghĩa → Hệ thống
-              </div>
-            </div>
+            
           </div>
         </SectionWrapper>
       </div>

@@ -2,6 +2,11 @@ export const heroContent = {
   badge: "CHUYÊN ĐỀ HỌC THUẬT",
   title: "DÂN CHỦ XÃ HỘI CHỦ NGHĨA",
   subtitle: "Giữa lý luận kinh điển và sức mạnh không gian mạng",
+  statement:
+    "Ngày nay, người dân có thể tự do bình luận, chia sẻ, tạo kiến nghị viral trên mạng xã hội và buộc chính quyền phải lắng nghe — đây chính là biểu hiện cao nhất của dân chủ xã hội chủ nghĩa mà Mác-Lênin đã đề ra",
+  scrollHint: "Thông tin phân tích ở bên dưới",
+  marxImageSrc: "",
+  marxImageAlt: "Chân dung Karl Marx",
   typing: [
     "Mạng xã hội mở rộng phương thức tham gia dân chủ.",
     "Bản chất dân chủ xã hội chủ nghĩa được bảo đảm bằng thể chế và pháp luật.",

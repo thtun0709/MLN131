@@ -143,6 +143,15 @@ function App() {
     navigate("/ai-usage");
   };
 
+  const handleScrollToDetails = () => {
+    const target = document.getElementById("hero-insight");
+    if (!target) return;
+
+    const offset = 90;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    smoothScrollTo(top, 460);
+  };
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100">
       <div className="app-bg" aria-hidden="true" />
@@ -264,12 +273,32 @@ function App() {
                 }}
               />
             </div>
+
+            <button
+              type="button"
+              onClick={handleScrollToDetails}
+              className="hero-scroll-cta inline-flex flex-col items-center gap-1 text-emerald-200 transition hover:text-emerald-100"
+              aria-label="Cuộn xuống phần thông tin"
+            >
+              <span className="text-xs font-medium uppercase tracking-[0.18em] md:text-sm">{heroContent.scrollHint}</span>
+              <span className="animate-bounce text-2xl leading-none md:text-3xl">↓</span>
+            </button>
           </div>
         </div>
       </section>
 
-      <main className="relative z-10 mx-auto w-full max-w-[1200px] px-4 pb-6 pt-6 md:px-6 md:pb-8 md:pt-8">
-        <section className="mt-6 space-y-5">
+      <section id="hero-insight" className="hero-insight-wrap relative z-10">
+        <div className="mx-auto w-full max-w-[1200px] px-4 md:px-6">
+          <div className="hero-insight-panel">
+            <div className="hero-insight-quote">
+              <p>"{heroContent.statement}"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main className="relative z-10 mx-auto w-full max-w-[1200px] px-4 pb-6 pt-0 md:px-6 md:pb-8 md:pt-0">
+        <section className="mt-0 space-y-5">
           <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}>
             <Chapter1 chapter={chapterData.chapter1} />
           </motion.div>

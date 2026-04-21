@@ -88,17 +88,15 @@ function Chapter4({ chapter }) {
         <SectionWrapper title="Tổng Hợp" tone="warm">
           <div className="rounded-2xl border border-amber-300/30 bg-linear-to-r from-orange-950/35 via-amber-900/20 to-red-950/35 p-6 md:p-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
-              <div className="mx-auto w-full max-w-xl space-y-3">
-                <div className="rounded-xl border border-amber-300/30 bg-black/20 px-4 py-3 text-center text-sm font-semibold text-amber-100 md:text-base">
-                  Nền tảng lâu dài
-                </div>
-                <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-cyan-100 md:text-base">
-                  Công cụ hỗ trợ
-                </div>
-                <div className="rounded-xl border border-amber-300/30 bg-black/20 px-4 py-3 text-center text-sm font-semibold text-amber-100 md:text-base">
-                  Quyền lực nhân dân
-                </div>
-              </div>
+              <p className="text-lg font-semibold leading-relaxed text-amber-100 md:text-2xl">
+                Dân chủ xã hội chủ nghĩa là quá trình lâu dài,
+                <br />
+                Mạng xã hội chỉ là công cụ hỗ trợ.
+                <br />
+                Quyền lực thực sự thuộc về nhân dân
+                <br />
+                khi được thực hiện trong khuôn khổ pháp luật.
+              </p>
 
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="rounded-xl border border-cyan-300/30 bg-white/5 px-6 py-3 text-sm font-semibold text-cyan-100 md:text-base">

@@ -11,6 +11,12 @@ import Chapter4 from "./pages/Chapter4";
 import { chapterData, heroContent, tabs } from "./data/chapters";
 import "./App.css";
 
+const OUTER_TRIANGLES = Array.from({ length: 48 }, (_, index) => (index * 360) / 48);
+const OUTER_GEOMETRIC = Array.from({ length: 24 }, (_, index) => (index * 360) / 24);
+const INNER_SPOKES = Array.from({ length: 36 }, (_, index) => (index * 360) / 36);
+const INNER_DOTS = Array.from({ length: 18 }, (_, index) => (index * 360) / 18);
+const SUN_RAYS = Array.from({ length: 16 }, (_, index) => (index * 360) / 16);
+
 function App() {
   const SCROLL_SPY_OFFSET = 108;
   const SCROLL_SPY_HYSTERESIS = 30;
@@ -145,6 +151,103 @@ function App() {
 
       <section className="hero-banner-wrap relative z-10 pt-[68px]">
         <div className="hero-banner">
+          <div className="hero-banner-ornament" aria-hidden="true">
+            <svg className="dongson-drum" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="dongson-depth" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#d4af37" stopOpacity="0.18" />
+                  <stop offset="55%" stopColor="#c9a96e" stopOpacity="0.08" />
+                  <stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
+                </radialGradient>
+                <filter id="dongson-glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="1.4" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <circle className="drum-depth" cx="400" cy="400" r="370" fill="url(#dongson-depth)" />
+
+              <g className="drum-outer-ring">
+                <circle cx="400" cy="400" r="322" fill="none" stroke="#c9a96e" strokeWidth="2" />
+                <circle cx="400" cy="400" r="292" fill="none" stroke="#d4af37" strokeWidth="1.6" />
+                <circle cx="400" cy="400" r="264" fill="none" stroke="#c9a96e" strokeWidth="1.2" />
+
+                {OUTER_TRIANGLES.map((angle) => (
+                  <path
+                    key={`outer-triangle-${angle}`}
+                    d="M400 74 L388 108 L412 108 Z"
+                    fill="#d4af37"
+                    transform={`rotate(${angle} 400 400)`}
+                  />
+                ))}
+
+                {OUTER_GEOMETRIC.map((angle) => (
+                  <g key={`outer-geometric-${angle}`} transform={`rotate(${angle} 400 400)`}>
+                    <path d="M400 128 L392 138 L400 148 L408 138 Z" fill="#c9a96e" />
+                    <path d="M400 162 L394 170 L400 178 L406 170 Z" fill="#d4af37" />
+                  </g>
+                ))}
+
+                {SUN_RAYS.map((angle) => (
+                  <path
+                    key={`mid-rays-${angle}`}
+                    d="M400 202 L394 228 L406 228 Z"
+                    fill="#c9a96e"
+                    transform={`rotate(${angle} 400 400)`}
+                  />
+                ))}
+              </g>
+
+              <g className="drum-inner-ring">
+                <circle cx="400" cy="400" r="212" fill="none" stroke="#d4af37" strokeWidth="1.5" />
+                <circle cx="400" cy="400" r="186" fill="none" stroke="#c9a96e" strokeWidth="1.3" />
+
+                {INNER_SPOKES.map((angle) => (
+                  <line
+                    key={`inner-spoke-${angle}`}
+                    x1="400"
+                    y1="198"
+                    x2="400"
+                    y2="244"
+                    stroke="#d4af37"
+                    strokeWidth="1.2"
+                    transform={`rotate(${angle} 400 400)`}
+                  />
+                ))}
+
+                {INNER_DOTS.map((angle) => (
+                  <circle
+                    key={`inner-dot-${angle}`}
+                    cx="400"
+                    cy="214"
+                    r="4"
+                    fill="#c9a96e"
+                    transform={`rotate(${angle} 400 400)`}
+                  />
+                ))}
+              </g>
+
+              <g className="drum-sun" filter="url(#dongson-glow)">
+                <circle cx="400" cy="400" r="88" fill="none" stroke="#c9a96e" strokeWidth="1.5" />
+                <circle cx="400" cy="400" r="58" fill="none" stroke="#d4af37" strokeWidth="1.3" />
+
+                {SUN_RAYS.map((angle) => (
+                  <path
+                    key={`sun-rays-${angle}`}
+                    d="M400 304 L394 338 L406 338 Z"
+                    fill="#d4af37"
+                    transform={`rotate(${angle} 400 400)`}
+                  />
+                ))}
+
+                <circle cx="400" cy="400" r="22" fill="#c9a96e" fillOpacity="0.45" />
+              </g>
+            </svg>
+          </div>
+
           <div className="hero-banner-inner mx-auto flex h-full w-full max-w-[1200px] flex-col items-center justify-center px-4 text-center md:px-6">
             <span className="inline-flex rounded-full border border-emerald-300/40 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">
               {heroContent.badge}

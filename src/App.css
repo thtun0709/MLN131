@@ -20,6 +20,11 @@ body {
 }
 
 .hero-banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  --ring-outer-duration: 20s;
+  --ring-inner-duration: 15s;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -34,8 +39,80 @@ body {
 }
 
 .hero-banner-inner {
+  position: relative;
+  z-index: 2;
   max-width: 880px;
   min-height: calc(100svh - 68px);
+}
+
+.hero-banner-ornament {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+}
+
+.hero-banner-ornament::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 45%, rgba(2, 6, 23, 0.2) 100%);
+}
+
+.dongson-drum {
+  width: clamp(320px, 68vw, 820px);
+  aspect-ratio: 1 / 1;
+  opacity: 0.11;
+  filter: blur(0.35px) drop-shadow(0 0 24px rgba(212, 175, 55, 0.18));
+}
+
+.dongson-drum .drum-depth {
+  opacity: 0.5;
+}
+
+.dongson-drum .drum-outer-ring,
+.dongson-drum .drum-inner-ring {
+  transform-origin: center;
+  transform-box: fill-box;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.dongson-drum .drum-outer-ring {
+  animation: bronze-rotate-cw var(--ring-outer-duration) linear infinite;
+}
+
+.dongson-drum .drum-inner-ring {
+  animation: bronze-rotate-ccw var(--ring-inner-duration) linear infinite;
+}
+
+.dongson-drum .drum-sun {
+  opacity: 0.9;
+}
+
+.hero-banner:hover {
+  --ring-outer-duration: 14s;
+  --ring-inner-duration: 11s;
+}
+
+@keyframes bronze-rotate-cw {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes bronze-rotate-ccw {
+  from {
+    transform: rotate(1turn);
+  }
+  to {
+    transform: rotate(0turn);
+  }
 }
 
 @media (max-width: 768px) {
@@ -49,5 +126,17 @@ body {
 
   .hero-banner-inner {
     min-height: calc(100svh - 64px);
+  }
+
+  .dongson-drum {
+    width: min(90vw, 560px);
+    opacity: 0.08;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dongson-drum .drum-outer-ring,
+  .dongson-drum .drum-inner-ring {
+    animation: none;
   }
 }

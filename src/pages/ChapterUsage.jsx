@@ -47,7 +47,7 @@ function ChapterUsage({ chapter }) {
     <section id={chapterId} className="scroll-mt-24 py-12">
       <div className="mx-auto w-full max-w-6xl space-y-12 px-0">
         <HeroBlock
-          kicker="--------Sử dụng AI--------"
+          kicker="--------AI USAGE--------"
           heading="Báo cáo sử dụng AI"
           subheading="Minh bạch công cụ, quy trình đặt lệnh và cách kiểm duyệt nội dung học thuật"
           highlight="Copilot + NotebookLM + Gemini + ChatGPT"
